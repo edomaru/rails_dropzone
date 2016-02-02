@@ -1,0 +1,43 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require dropzone/dropzone
+ *= require_self
+ */
+
+body {
+    background: #f7f7f7;
+    font-family: 'Montserrat', sans-serif;
+ }
+ #content {
+    width: 600px;
+    margin: 100px auto;
+ }
+
+ .dropzone {
+      background: #fff;
+     border: 2px dashed #ddd;
+     border-radius: 5px;
+ }
+
+ .dz-message {
+    color: #999;
+ }
+
+ .dz-message:hover {
+    color: #464646;
+ }
+ .dz-message h3 {
+    font-size: 200%;
+    margin-bottom: 15px;
+ }
